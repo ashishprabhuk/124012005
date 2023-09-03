@@ -1,4 +1,3 @@
-// TrainDetailsById.js (or any relevant component file)
 import React, { useEffect, useState } from "react";
 
 const Id = ({ authorizationToken, trainNumber }) => {
@@ -12,7 +11,6 @@ const Id = ({ authorizationToken, trainNumber }) => {
             method: "GET",
             headers: {
                 Authorization: `Bearer ${authorizationToken}`,
-                // Add any other required headers here
             },
         })
             .then((response) => {
@@ -26,12 +24,10 @@ const Id = ({ authorizationToken, trainNumber }) => {
                 console.log("Train details fetched successfully:", data);
                 setTrainDetails(data);
                 setLoading(false);
-                // Handle the API response data here
             })
             .catch((error) => {
                 console.error("Error:", error);
                 setLoading(false);
-                // Handle the error here
             });
     }, [authorizationToken, trainNumber]);
 
