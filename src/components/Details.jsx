@@ -1,4 +1,3 @@
-// TrainDetails.js (or any relevant component file)
 import React, { useEffect, useState } from "react";
 
 const Details = ({ authorizationToken }) => {
