@@ -1,4 +1,3 @@
-// Authorization.js (or any relevant component file)
 import React, { useState } from "react";
 
 const Authorization = () => {
